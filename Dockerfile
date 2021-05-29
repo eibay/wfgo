@@ -9,5 +9,6 @@ RUN go build -ldflags="-s -w" -a -o /main
 
 FROM alpine:latest
 WORKDIR /main
-COPY --from=build /main main
-ENTRYPOINT [ "/main" ]      
+COPY --from=build /main /main
+EXPOSE 8080
+ENTRYPOINT [ "./main" ]      
