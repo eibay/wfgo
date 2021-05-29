@@ -1,3 +1,3 @@
-module go-api.com
+module github.com/eibay/wfgo
 
 go 1.15
