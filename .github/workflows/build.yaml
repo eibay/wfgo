@@ -13,7 +13,7 @@ jobs:
     
     ## Builds our docker image!
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: docker build . --file Dockerfile --tag eibayan/go-api:$(date +%s)
 
     ## Publishes our image to Docker Hub 😎
     - name: Publish to Registry
